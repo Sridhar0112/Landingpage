@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; 
+    overflow: hidden;
+}
+
+header {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    background-color: #2c3e50; 
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333; 
+}
+
+.dashboard-container {
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+    margin: 0;
+    background-color: #ecf0f1; 
+}
+
+.dashboard-image {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.dashboard-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #fff transparent;
+}
